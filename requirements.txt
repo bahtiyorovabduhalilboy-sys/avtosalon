@@ -41,3 +41,4 @@ urllib3==2.7.0
 wheel==0.47.0
 yarl==1.24.5
 gunicorn==21.2.0
+dj-database-url==2.1.0
