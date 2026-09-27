@@ -13,6 +13,7 @@ class Position(models.Model):
 class Worker(AbstractUser):
     phone_number = models.CharField(max_length=20, blank=True, null=True)
     photo = models.ImageField(upload_to='workers/', blank=True, null=True)
+    full_name = models.CharField(max_length=255, null=True, blank=True)
     salary = models.DecimalField(max_digits=12, decimal_places=2, default=0.00)
     position = models.ForeignKey(Position, on_delete=models.SET_NULL, null=True, blank=True)
 
